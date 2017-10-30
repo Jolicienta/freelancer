@@ -1,1 +1,118 @@
-<!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- En esta parte del archivo HTML se colocan los link correspondientes tanto a las páginas
+    web que vinvularé, como google font en el caso de las tipografías y fontawesome para los íconos
+    que utilizaré. Tambien es aquí donde se linkea la hoja de estilos css -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2ce8081ca7.js"></script>
+    <title>Freelancer</title>
+  </head>
+  <!-- Aquí es donde creo toda la estructura visual de mi web -->
+  <body>
+    <!-- En mi estructura web, yo determino al header como la cabecera de la pagina -->
+    <header>
+        <a href="#encabezado" class="mayus-title">start bootstrap</a>
+        <nav><!-- y creo dentro en el un <div> con características de barra de navegación -->
+        <a href="#port" class="mayus">portfolio</a>
+        <a href="#about" class="mayus">about</a>
+        <a href="#contact" class="mayus">contact</a>
+      </nav>
+    </header>
+   <!-- Esta primera sección corresponde a una presentacion de la web Freelancer -->
+    <section class="encabezado-principal" id="encabezado">
+      <div id="profile"></div>
+      <h1 class="mayus">start bootstrap</h1>
+      <div class= "separador">
+        <hr>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <hr>
+      </div>
+      <p>Web Developer - Graphic Artist - User Experience Designer</p>
+    </section>
+    <!-- La sección portafolio es donde se puedem subir las imágenes de los trabajos
+     realizados a modo de prueba -->
+    <section class="portfolio" id="port">
+      <h1 class="mayus">portfolio</h1>
+      <div class= "separador">
+        <hr>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <hr>
+      </div>
+      <div class="imagenes">
+        <div id="casa"></div>
+        <div id="pastel"></div>
+        <div id="circo"></div>
+        <div id="jostick"></div>
+        <div id="caja"></div>
+        <div id="submarino"></div>
+      </div>
+    </section>
+    <!-- Aquí es donde se realiza una descripción detallada de las características
+     de la web y/o su creador -->
+    <section class="about" id="about">
+      <h1 class="mayus">about</h1>
+      <div class= "separador">
+        <hr>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <hr>
+      </div>
+      <div class="parrafo1">
+          <p>Freelancer is a free bootstrap theme created by Start Bootstrap.
+          The download includes the complete source files including HTML,
+          CSS, and JavaScript as well as optional LESS stylesheets for easy
+          customization.</p>
+      </div>
+      <div class="parrafo2">
+          <p>Whether you're a student looking to showcase your work, a
+          professional looking to attract clients, or a graphic artist
+          looking to share your projects, this template is the perfect
+          starting point!</p>
+      </div>
+      <a class="link" href="#encabezado" >
+        <i class="fa fa-download" aria-hidden="true"></i> Download Theme
+      </a>
+    </section>
+     <!-- En esta d¿sección se entrega la información sobre como contactar
+      al encargado de la web, ademas de dar la opción de enviar un mensaje -->
+    <section class="contact" id="contact">
+      <h1 class="mayus">contact me</h1>
+      <div class= "separador">
+        <hr>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <hr>
+      </div>
+      <form action="/action_page.php" method="post"><!-- El formulario permite el envío de información -->
+        <input type="text" class="name" placeholder="Name"><br>
+        <input type="text" class="email" placeholder="Email Address"><br>
+        <input type="text" class="phone" placeholder="Phone Number" ><br>
+        <textarea class="message" placeholder="Message" rows="7" cols="40"></textarea><br>
+        <input class="button" type="submit" value="Send">
+     </form>
+    </section>
+    <!-- En esta sección final se da el acceso a las redes sociales relacionadas con la web -->
+    <footer>
+      <div class="location">
+        <h4 class="mayus-tittle">location</h4>
+        <p>3481 Melrose Place <br>Beverly Hills, CA 90210</p>
+      </div>
+      <div class="web">
+        <h4 class="mayus-tittle">around the web</h4>
+        <a href="#encabezado" class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#encabezado" class="icon"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        <a href="#encabezado" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#encabezado" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#encabezado" class="icon"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+      </div>
+      <div class="freelancer">
+        <h4 class="mayus-tittle">about freelancer</h4>
+        <p>Freelance is a free to use, open source <br>
+          Bootstrap theme created by <a href="https://startbootstrap.com/">Start<br>
+          Bootstrap</a>.</p>
+      </div>
+      <p class="derechos">Copyright © Your Website 2017</p>
+    </footer>
+  </body>
+</html>
